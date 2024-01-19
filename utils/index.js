@@ -2,6 +2,7 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 
 // TODO: Create an array of questions for user input
+// what will I need to populate the template literal for the readme markdown document
 const questions = [
     {
         type: "input",
@@ -31,9 +32,22 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile('README.md', data) {}
+function writeToFile(fileName, data) {
+    const {} = questions;
+
+
+    fs.writeFile(fileName, data, (err) => {
+        if (err) {
+          console.error(err);
+        } else {
+          console.log("Success!");
+        }
+      });
+}
 
 // TODO: Create a function to initialize app
+
+// initialize the template that fills in the responses
 function init() {
     inquirer
     .prompt(questions)
