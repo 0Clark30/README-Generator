@@ -17,7 +17,7 @@ const questions = [
   },
   {
     type: "input",
-    message: "Please type in your bio",
+    message: "Installation Steps:",
     name: "installation",
   },
   {
@@ -40,21 +40,9 @@ const questions = [
     message: "License?",
     name: "license",
     choices: [
-      "None",
-      "Apache license 2.0",
-      "Boost Software License 1.0",
-      'BSD 2-clause "Simplified" license',
-      'BSD 3-clause "New" or "Revised" license',
-      "Creative Commons Zero v1.0 Universal",
-      "Do What The F*ck You Want To Public License",
-      "Eclipse Public License 1.0",
-      "GNU Affero General Public License v3.0",
-      "GNU General Public License v2.0",
-      "GNU General Public License v3.0",
-      "GNU Lesser General Public License v3.0",
       "MIT",
-      "Mozilla Public License 2.0",
-      "The Unlicense",
+      "Apache license 2.0",
+      "Mozilla Public License 2.0"
     ],
   },
   {
